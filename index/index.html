@@ -4,6 +4,7 @@
 
 <head>
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,24 +28,136 @@
 
         .container {
             position: absolute;
-            bottom: 100px;
+            bottom: 0;
             left: 0;
             right: 0;
-            padding-bottom: 50px;
+            padding-bottom: 180px;
         }
 
-        .confbod {
-            width: 25%;
-            height: 400px;
-            background-color: white;
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 1%;
+        }
 
+
+        #situation {
+            color: rgb(29, 10, 99);
+            position: relative;
+            top: 50px;
         }
 
 
 
-        .active .container {
-            display: inline;
+        .contenair {
+            display: block;
+        }
 
+        @media (min-width:1000px) {
+            #chart {
+
+                position: relative;
+                left: 15%;
+                top: 100px;
+            }
+        }
+
+
+        @media (max-width:1000px) {
+            #chart {
+
+                position: relative;
+
+                top: 100px;
+            }
+        }
+
+
+        @media (min-width:769px) and (max-width:999px) {
+            #chart {
+
+                position: relative;
+                left: 15%;
+                top: 100px;
+            }
+        }
+
+        @media (min-width:0px) and (max-width:350px) {
+            .container {
+                position: relative;
+            }
+        }
+
+        @media (max-width:768px) {
+            footer {
+                display: none;
+            }
+        }
+
+        .pass {
+            position: relative;
+            top: 150px
+        }
+
+
+        .pass div h2 {
+            color: rgb(29, 10, 99);
+
+        }
+
+
+        .contenair-vaccination {
+            position: relative;
+            top: 200px;
+            background-color: rgb(49, 163, 125);
+        }
+
+        .contenair-vaccination div h2 {
+            color: white;
+        }
+
+
+
+
+        .form {
+            position: relative;
+
+            top: 200px;
+
+        }
+
+        .form div h2 {
+            color: rgb(29, 10, 99);
+        }
+
+        .foot {
+            position: relative;
+            top: 300px;
+            height: 200px;
+            background-color: rgb(29, 10, 99);
+        }
+
+        .rsx {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+        }
+
+        .articles {
+            position: relative;
+            bottom: 100px;
+            height: 50px;
+        }
+
+        .contact {
+            position: relative;
+            bottom: 50px;
+            height: 50px;
+        }
+
+        .resaux {
+            position: relative;
+            top: 40px;
         }
     </style>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -57,20 +170,15 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link" href="#situation">Situation</a>
+                    <a class="nav-link" href="#vaccinations">Vaccination</a>
+                    <a class="nav-link" href="#">Me vacciner</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-
-
-
-
-    </div>
+    <!--config caroussel-->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -81,53 +189,59 @@
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
+
+            <!--caroussel active-->
             <div class="carousel-item active">
                 <div class="container">
-
-                    <div class="confbod">
-                        <h1> Gestes Barrière</h1>
-                        <div class="confimg"></div>
-                        <div class="condesc">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint deserunt
-                                inventore
-                                nisi
-                                iure
-                                officia eum, fuga impedit adipisci corrupti cumque velit facere, temporibus porro in
-                                dolorum
-                                mollitia dolorem aperiam.</p>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-
-            <!---->
-            <div class="carousel-item ">
-                <div class="container">
-                    <h1> example headline</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint deserunt inventore
-                        nisi
+                    <h1> Nombres de cas par jour</h1>
+                    <h2>3200 cas</h2>
+                    <p class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint
+                        deserunt
+                        inventore nisi
+                        iure
+                        officia eum, fuga impedit adipisci corrupti cumque velit facere, temporibus porro in dolorum
+                        mollitia dolorem aperiamLorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint
+                        deserunt inventore nisi
                         iure
                         officia eum, fuga impedit adipisci corrupti cumque velit facere, temporibus porro in dolorum
                         mollitia dolorem aperiam.</p>
-                    <a href="#" class="btn btn-lg btn-secondary">Sign up Today</a>
+
                 </div>
             </div>
+
+            <!---->
+
+            <!--caroussel item-->
+            <div class="carousel-item ">
+                <div class="container">
+                    <h1> Nombres d'hospitalisations</h1>
+                    <p class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint
+                        deserunt inventore nisi
+                        iure
+                        officia eum, fuga impedit adipisci corrupti cumque velit facere, temporibus porro in dolorum
+                        mollitia dolorem aperiam.</p>
+                    <img src="../index/img/medicine.png" />
+                </div>
+            </div>
+            <!--caroussel item-->
+
 
             <!--caroussel item-->
             <div class="carousel-item">
                 <div class="container">
-                    <h1> example headline</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint deserunt inventore
-                        nisi
+                    <h1> Gestes barrières</h1>
+                    <p class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint
+                        deserunt inventore nisi
                         iure
                         officia eum, fuga impedit adipisci corrupti cumque velit facere, temporibus porro in dolorum
                         mollitia dolorem aperiam.</p>
-                    <a href="#" class="btn btn-lg btn-primary">Sign up Today</a>
+                    <img src="../index/img/masque-medical.png" />
+                    <img src="../index/img/se-laver-les-mains.png" />
+                    <img src="../index/img/distanciation-sociale.png" />
                 </div>
             </div>
+            <!--caroussel item-->
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
@@ -140,28 +254,189 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <!-- config-->
 
 
+    <div class="contenair-covid">
+        <div id=situtation class="situation">
+            <h2 id="situation" class="offset-md-2">Situation covid actuelle :</h2>
+        </div>
 
-    <!--
-<div class="container">
-        <div class="title">
-            <h2>Actualité cas covid</h2>
+        <div id="chart" class="col-md-6">
+            <canvas id="myChart"></canvas>
+        </div>
+
+
+        <div class="pass">
+            <div>
+                <h2 class="offset-md-2">Passe sanitaire obligatoire:</h2>
+                <img class=offset-md-2 src="../index/img/qr-scan.png" alt="green pass">
+                <p class="col-md-6 offset-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim mollitia
+                    rem
+                    cupiditate dolores,
+                    accusamus ullam hic accusantium nesciunt magni ducimus officiis voluptatibus assumenda excepturi
+                    eveniet expedita placeat asperiores corrupti delectus. Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Ipsam doloremque officia blanditiis ab adipisci? Tenetur, reiciendis eum maxime
+                    alias at nobis suscipit hic reprehenderit quae amet, quas, cupiditate similique facilis!</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contenair-vaccination">
+        <div id="vaccinations" class="vaccination">
+            <h2 class="offset-md-2">Vaccination :</h2>
+            <img class="offset-md-2" src="../index/img/vaccine(1).png" alt="">
+
+            <h3 style="color:aliceblue" class="offset-md-2">Pourquoi se faire vacciner ?</h3>
+            <p style="color: white;" class="col-md-6 offset-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Enim mollitia
+                rem
+                cupiditate dolores,
+                accusamus ullam hic accusantium nesciunt magni ducimus officiis voluptatibus assumenda excepturi
+                eveniet expedita placeat asperiores corrupti delectus. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsam doloremque officia blanditiis ab adipisci? Tenetur, reiciendis eum maxime
+                alias at nobis suscipit hic reprehenderit quae amet, quas, cupiditate similique facilis!</p>
+
+            <h3 style="color:aliceblue" class="offset-md-2">Le vaccin est il sure ?</h3>
+            <p style="color: white;" class="col-md-6 offset-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Enim mollitia
+                rem
+                cupiditate dolores,
+                accusamus ullam hic accusantium nesciunt magni ducimus officiis voluptatibus assumenda excepturi
+                eveniet expedita placeat asperiores corrupti delectus. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsam doloremque officia blanditiis ab adipisci? Tenetur, reiciendis eum maxime
+                alias at nobis suscipit hic reprehenderit quae amet, quas, cupiditate similique facilis!</p>
+
+            <h3 style="color:aliceblue" class="offset-md-2">Quels sont les effets secondaires ?</h3>
+            <p style="color: white;" class="col-md-6 offset-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Enim mollitia
+                rem
+                cupiditate dolores,
+                accusamus ullam hic accusantium nesciunt magni ducimus officiis voluptatibus assumenda excepturi
+                eveniet expedita placeat asperiores corrupti delectus. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsam doloremque officia blanditiis ab adipisci? Tenetur, reiciendis eum maxime
+                alias at nobis suscipit hic reprehenderit quae amet, quas, cupiditate similique facilis!</p>
+            <h3 style="color:aliceblue" class="offset-md-2">Quels sont les vaccins disponibles ?</h3>
+            <h4 style="color:aliceblue" class="offset-md-2 ">Pfiezer biontech ARN :</h4>
+            <p style=" color: white;" class="col-md-6 offset-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Enim mollitia
+                rem
+                cupiditate dolores,
+                accusamus ullam hic accusantium nesciunt magni ducimus officiis voluptatibus assumenda excepturi
+                eveniet expedita placeat asperiores corrupti delectus. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsam doloremque officia blanditiis ab adipisci? Tenetur, reiciendis eum maxime
+                alias at nobis suscipit hic reprehenderit quae amet, quas, cupiditate similique facilis!</p>
+
+            <h4 style="color:aliceblue" class="offset-md-2 ">Moderna ARN :</h4>
+            <p style=" color: white;" class="col-md-6 offset-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Enim mollitia
+                rem
+                cupiditate dolores,
+                accusamus ullam hic accusantium nesciunt magni ducimus officiis voluptatibus assumenda excepturi
+                eveniet expedita placeat asperiores corrupti delectus. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsam doloremque officia blanditiis ab adipisci? Tenetur, reiciendis eum maxime
+                !</p>
+
         </div>
 
     </div>
 
 
-   -->
+    <div class="form">
+        <div>
+            <h2 class="offset-md-4">Je suis solidaire contre la COVID</h2>
+
+            <form class="offset-md-4">
+
+                <img src="../index/img/syringe.png" alt="">
+
+                <h4 style="color: rgb(29, 10, 99);" class>Vous pouvez sauver des vies</h4>
+                <p class="col-md-6 offset-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, rem quod
+                    dignissimos autem
+                    vero nulla totam
+                    animi iste quis. Blanditiis soluta iusto reiciendis fugit fugiat vel nihil iure inventore provident?
+                </p>
+                <div class="col-md-6">
+                    <label for="exampleInputEmail1" class="form-label">Nom</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                </div>
+                <div class="col-md-6">
+                    <label for="exampleInputEmail1" class="form-label">Prénom</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                </div>
+                <div class="col-md-6">
+                    <label for="exampleInputEmail1" class="form-label">Numéro de sécurité sociale</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                </div>
+                <div class="col-md-6">
+                    <label for="exampleInputPassword1" class="form-label">Email</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="foot">
+
+            <div class="resaux offset-md-9">
+                <h4 style="color: white;">Nos réseaux</h4>
+                <img class="rsx offset-md-2" src="../index/img/twitter.png" alt="green pass">
+                <img class="rsx offset-md-2" src="../index/img/reddit.png" alt="green pass">
+                <img class="rsx offset-md-2" src="../index/img/linkedin.png" alt="green pass">
+            </div>
+            <div class="contact offset-md-5">
+                <h4 style="color: white;">Nous contacter</h4>
+                <img class="rsx offset-md-2" src="../index/img/gmail.png" alt="green pass">
+                <img class="rsx offset-md-2" src="../index/img/reddit.png" alt="green pass">
+                <img class="rsx offset-md-2" src="../index/img/linkedin.png" alt="green pass">
+            </div>
+
+
+            <div class="articles offset-md-1">
+                <h4 style="color: white;">Nos derniers articles</h4>
+                <ul>
+                    <li><a style="color: white;" href="#">Actu Covid</a></li>
+                    <li><a style="color: white;" href="#">Vaccincation Mondiale</a></li>
+                    <li><a style="color: white;" href="#">Vaccin moderna ARN</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <!-- JavaScript Bundle with Popper -->
 
+
+    <script data-udata="https://www.data.gouv.fr/" src="https://static.data.gouv.fr/static/oembed.js" async
+        defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="../script/chartconfig.js"></script>
+    <script src="../script/configdata.js"></script>
 
 </body>
 
