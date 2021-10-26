@@ -109,7 +109,8 @@
         .contenair-vaccination {
             position: relative;
             top: 200px;
-            background-color: rgb(49, 163, 125);
+
+            background-color: #02A161;
         }
 
         .contenair-vaccination div h2 {
@@ -163,6 +164,12 @@
         ul {
             list-style: none;
         }
+
+        .vaccs {
+            position: relative;
+
+            top: 150px;
+        }
     </style>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -173,10 +180,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                    <a class="nav-link" href="#situation">Situation</a>
-                    <a class="nav-link" href="#vaccinations">Vaccination</a>
-                    <a class="nav-link" href="#form">Me vacciner</a>
+                    <a class="nav-link active" href="#">Accueil</a>
+                    <a class="nav-link active" href="#situation">Situation</a>
+                    <a class="nav-link active" href="#vaccinations">Vaccination</a>
+                    <a class="nav-link active" href="#form">Me vacciner</a>
                 </div>
             </div>
         </div>
@@ -227,7 +234,7 @@
                         iure
                         officia eum, fuga impedit adipisci corrupti cumque velit facere, temporibus porro in dolorum
                         mollitia dolorem aperiam.</p>
-                    <img src="../index/img/medicine.png" />
+                    <img src="./index/img/medicine.png" />
                 </div>
             </div>
             <!--caroussel item-->
@@ -242,9 +249,9 @@
                         iure
                         officia eum, fuga impedit adipisci corrupti cumque velit facere, temporibus porro in dolorum
                         mollitia dolorem aperiam.</p>
-                    <img src="../index/img/masque-medical.png" />
-                    <img src="../index/img/se-laver-les-mains.png" />
-                    <img src="../index/img/distanciation-sociale.png" />
+                    <img src="./index/img/masque-medical.png" />
+                    <img src="./index/img/se-laver-les-mains.png" />
+                    <img src="./index/img/distanciation-sociale.png" />
                 </div>
             </div>
             <!--caroussel item-->
@@ -277,7 +284,7 @@
         <div class="pass">
             <div>
                 <h2 class="offset-md-2">Passe sanitaire obligatoire :</h2>
-                <img class=offset-md-2 src="../index/img/qr-scan.png" alt="green pass">
+                <img class=offset-md-2 src="./index/img/qr-scan.png" alt="green pass">
                 <p class="col-md-6 offset-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim mollitia
                     rem
                     cupiditate dolores,
@@ -289,12 +296,35 @@
             </div>
         </div>
 
+
+
+        <div class="vaccs">
+            <h3 style="color: rgb(29, 10, 99);" class="offset-md-2">La vaccination accessible à toutes les personnes de
+                12
+                ans et plus</h3>
+            <p class="col-md-6 offset-md-2">
+                Suivant les recommandations vaccinales émises par la Haute autorité de santé dans ses avis du 27
+                novembre
+                2020 et du 2 février 2021, une priorisation des publics éligibles avait été mise en place au début de la
+                campagne de vaccination.
+                L’âge de la personne est le facteur de risque de développer une forme grave de Covid-19 le plus
+                important,
+                la Haute Autorité de santé recommandait donc de prioriser les populations cibles vaccinales en fonction
+                de
+                différentes classes d’âge et selon les facteurs d’exposition au virus (ex : vie en collectivité,
+                professionnels du secteur de la santé…).
+                Par ailleurs, à tranche d’âge égale, les personnes souffrant de comorbidités associées à un risque de
+                développer une forme grave de Covid-19 devaient être vaccinées en premier.
+            </p>
+
+
+        </div>
     </div>
 
     <div class="contenair-vaccination">
         <div id="vaccinations" class="vaccination">
             <h2 class="offset-md-2">Vaccination :</h2>
-            <img class="offset-md-2" src="../index/img/vaccine(1).png" alt="">
+            <img class="offset-md-2" src="./index/img/vaccine(1).png" alt="">
 
             <h3 style="color:aliceblue" class="offset-md-2">Pourquoi se faire vacciner ?</h3>
             <p style="color: white;" class="col-md-6 offset-md-2">Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -357,7 +387,7 @@
 
             <form class="offset-md-4">
 
-                <img src="../index/img/syringe.png" alt="">
+                <img src="./index/img/syringe.png" alt="">
 
                 <h4 style="color: rgb(29, 10, 99);" class>Vous pouvez sauver des vies</h4>
                 <p class="col-md-6 offset-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, rem quod
@@ -384,6 +414,15 @@
                     <label for="exampleInputPassword1" class="form-label">Email</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
+                <div class="">
+                    <p class="col-md-4">
+                        Les informations recueillies à partir de ce formulaire sont utilisées par Covidgouv afin de
+                        gérer votre demande de contact ou de vaccination. Pour plus d’informations sur la gestion de vos
+                        données et
+                        l’exercice de vos droits (accès, rectification, opposition, effacement, portabilité,
+                        limitation), consulter notre Politique de protection des données à caractère personnel <a
+                            href="#">sur ce lien</a></p>
+                </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -403,15 +442,15 @@
 
             <div class="resaux offset-md-9">
                 <h4 style="color: white;">Nos réseaux</h4>
-                <img class="rsx offset-md-2" src="../index/img/twitter.png" alt="green pass">
-                <img class="rsx offset-md-2" src="../index/img/reddit.png" alt="green pass">
-                <img class="rsx offset-md-2" src="../index/img/linkedin.png" alt="green pass">
+                <img class="rsx offset-md-2" src="./index/img/twitter.png" alt="green pass">
+                <img class="rsx offset-md-2" src="./index/img/reddit.png" alt="green pass">
+                <img class="rsx offset-md-2" src="./index/img/linkedin.png" alt="green pass">
             </div>
             <div class="contact offset-md-5">
                 <h4 style="color: white;">Nous contacter</h4>
-                <img class="rsx offset-md-2" src="../index/img/gmail.png" alt="green pass">
-                <img class="rsx offset-md-2" src="../index/img/reddit.png" alt="green pass">
-                <img class="rsx offset-md-2" src="../index/img/linkedin.png" alt="green pass">
+                <img class="rsx offset-md-2" src="./index/img/gmail.png" alt="green pass">
+                <img class="rsx offset-md-2" src="./index/img/reddit.png" alt="green pass">
+                <img class="rsx offset-md-2" src="./index/img/linkedin.png" alt="green pass">
             </div>
 
 
@@ -442,7 +481,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="../script/chartconfig.js"></script>
+    <script src="./script/chartconfig.js"></script>
     <script src="../script/configdata.js"></script>
 
 </body>
